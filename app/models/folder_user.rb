@@ -1,2 +1,0 @@
-class FolderUser < ApplicationRecord
-end
