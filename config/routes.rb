@@ -1,12 +1,3 @@
 Rails.application.routes.draw do
-
-  devise_for :users
-  root 'cards#index'
-  resources :users, only: [:edit, :update, :index]
-  resources :folders, only: [:new, :create, :edit, :update] do
-    resources :cards, only: [:index, :create]
-    # namespace :api do
-    #   resources :cards, only: :index, defaults: { format: 'json' }
-    # end
-  end
+  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
