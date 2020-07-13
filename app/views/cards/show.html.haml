@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Omote:
+  = @card.omote
+%p
+  %b Ura:
+  = @card.ura
+
+= link_to 'Edit', edit_card_path(@card)
+\|
+= link_to 'Back', cards_path
