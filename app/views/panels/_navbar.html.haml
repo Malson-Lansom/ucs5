@@ -3,12 +3,10 @@
     %span.navbar-toggler-icon
   #navbarTogglerDemo01.collapse.navbar-collapse
     %h2.navbar-brand.username
-      ユーザーネーム
-      -#= current_user.name
+      = current_user.name
     %ul.navbar-nav.mr-auto.mt-2.mt-lg-0
       %li.nav-item.active
       = link_to "HOME", root_path, class: "nav-link"
-
       %li.nav-item
       = link_to "新規作成", "#", class: "nav-link"
       -# = link_to "新規作成", new_folder_path(current_user), class: "nav-link"
@@ -16,11 +14,9 @@
       = link_to "新規作成", "#", class: "nav-link"
       -# = link_to "編集", edit_folder_path(current_user), class: "nav-link"
       %li.nav-item
-      = link_to "新規作成", "#", class: "nav-link"
-      -# = link_to "ユーザー情報", edit_user_path(current_user), class: "nav-link"
+      = link_to "ユーザー情報", edit_user_path(current_user), class: "nav-link"
       %li.nav-item
-      = link_to "新規作成", "#", class: "nav-link"
-      -# = link_to "ログアウト", destroy_user_session_path, method: :delete, class: "nav-link"
+      = link_to "ログアウト", destroy_user_session_path, method: :delete, class: "nav-link"
     %form.form-inline.my-2.my-lg-0
       %input.form-control.mr-sm-2{:placeholder => "暗記カードを探す", :type => "search"}/
       %button.btn.btn-outline-success.my-2.my-sm-0{:type => "submit"} Search
