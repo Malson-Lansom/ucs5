@@ -1,12 +1,7 @@
 .sidebar.col-12.col-md-3
   .folder_links
-    .card_folder
-      = link_to "#" do
-        .folder_name
-          フォルダ名称
-  -# .folder_links
-  -#   - current_user.folders.each do |folder|
-  -#     .card_folder
-  -#       = link_to folder_cards_path(folder) do
-  -#         .folder_name
-  -#           = folder.name
+    - current_user.groups.each do |group|
+      .card_folder
+        = link_to "#" do
+          .folder_name
+            = group.name
