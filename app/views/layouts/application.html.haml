@@ -8,4 +8,13 @@
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
   %body
-    = yield
+  %header.header
+    .header__bar.row
+      %h1.grid-6
+        %a{:href => "/"} PicTweet
+      .user_nav.grid-6
+        %a.post{:href => "/tweets/new"} 投稿する
+  = yield
+  %footer
+    %p
+      Copyright PicTweet 2019.

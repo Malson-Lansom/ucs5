@@ -1,0 +1,6 @@
+.contents.row
+  - @books.each do |book|
+    .content_post
+      %p= book.text
+      %span.name
+        = book.title
