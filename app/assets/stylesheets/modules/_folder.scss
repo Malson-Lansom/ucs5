@@ -1,33 +1,31 @@
 .SettingFolderForm {
   font-family: Meiryo;
-  width: 90%;
+  width: 100%;
   margin: 10px auto;
   padding: 20px;
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 5px;
   &__field {
-    margin-top: 10px;
+    margin-top: 20px;
     display: flex;
-    justify-content: space-between;
   }
   &__leftField {
-    width: 50%;
-    padding-right: 20px;
+    width: 40%;
+    padding-right: 30px;
     padding-left: 20px;
     box-sizing: border-box;
   }
   &__rightField {
-    width: 45%;
+    width: 50%;
   }
   &__label {
     display: block;
-    line-height: 30px;
+    line-height: 20px;
     font-weight: bold;
     text-align: right;
   }
   &__input {
-    width: 100%;
     line-height: 20px;
     padding: 10px 15px;
     box-sizing: border-box;

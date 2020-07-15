@@ -1,0 +1,19 @@
+= render 'navbar'
+.container-fluid
+  .layout-container
+    = render 'sidebar'
+    = form_with(model: [@group, @panel], local: true) do |form|
+      .SettingFolderForm__field
+        .SettingFolderForm__leftField
+          .SettingFolderForm__label 
+          = @group.name
+          = form.label '出題:', class: 'SettingFolderForm__label'
+          = form.text_area :question, class: 'SettingFolderForm__input', placeholder: '問題を入力してください'
+          = form.label '解答:', class: 'SettingFolderForm__label'
+          = form.text_area :answer, class: 'SettingFolderForm__input', placeholder: '解答を入力してください'
+          = form.submit class: 'SettingFolderForm__button'
+        -# .SettingFolderForm__rightField      
+        -#   %p 問題一覧
+          - if @panels
+            - @panels.each do |panel|
+              = panel.question
