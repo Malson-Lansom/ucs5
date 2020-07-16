@@ -18,7 +18,9 @@
 :javascript
   (function() {
 
-    var words = document.getElementById('hidden_info');
+    var qandas = document.getElementById('hidden_info');
+    var words = JSON.parse(qandas.textContent);
+
     console.log(words);
     var xxx = words.length
     console.log(xxx)
