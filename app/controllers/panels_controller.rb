@@ -13,12 +13,15 @@ class PanelsController < ApplicationController
 
   def create
     @panel = @group.panels.new(panel_params)
-    if @panel.save
+    # if @panel.save
 
-    else
-      @panels = @group.panels.includes(:user)
-      flash.now[:alert] = '問題と解答を入力してください'
-      render :new
+    # else
+    #   @panels = @group.panels.includes(:user)
+    #   flash.now[:alert] = '問題と解答を入力してください'
+    #   render :new
+    # end
+    respond_to do |format|
+      format.json 
     end
   end
 
