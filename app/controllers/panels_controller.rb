@@ -3,8 +3,7 @@ class PanelsController < ApplicationController
 
   def index
     @panels = @group.panels.includes(:user)
-    @qanda = @panels.select(:question, :answer, :user_id)
-    
+    @qanda = @panels.to_json
   end
   
   def new
