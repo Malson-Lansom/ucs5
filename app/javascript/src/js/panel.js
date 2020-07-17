@@ -13,8 +13,16 @@ $(function(){
       processData: false,
       contentType: false
     })
-    .done(function(panel){
-      console.log(panel)
+    .done(function(data){
+      //console.log(data)
+      alert("データが追加されました")
+      $('.submitbutton').prop("disabled", false);
+      $('form')[1].reset();
     })
+    .fail(function(){
+      alert("送信エラーです")
+      $('.submitbutton').prop("disabled", false);
+    })
+
   });
 });
