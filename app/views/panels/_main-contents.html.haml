@@ -21,10 +21,7 @@
     var qandas = document.getElementById('hidden_info');
     var words = JSON.parse(qandas.textContent);
 
-    console.log(words);
-    var xxx = words.length
-    console.log(xxx)
-    var tests = [
+    var testdata = [
       { "question": "javascript<br/><br/>Math.sign()",       "answer": "正負の符号を求める<br/>引数は数値<br/>戻値は引数が正の時1<br/>負の場合は-1",  "user_id": 1 },
       { "question": "javascript<br/><br/>arr.reduce()",      "answer": "配列の各要素に関数を実行し一つの値にまとめる",                              "user_id": 1 },
       { "question": "javascript<br/><br/>str.charAt()",      "answer": "数字を引数にして、文字列から引数に該当する1文字取得する",                     "user_id": 6 },

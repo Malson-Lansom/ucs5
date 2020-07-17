@@ -1,47 +1,25 @@
-.SettingFolderForm {
-  font-family: Meiryo;
-  width: 100%;
-  margin: 10px auto;
-  padding: 20px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  &__field {
-    margin-top: 20px;
-    display: flex;
-  }
-  &__leftField {
-    width: 40%;
-    padding-right: 30px;
-    padding-left: 20px;
-    box-sizing: border-box;
-  }
-  &__rightField {
-    width: 50%;
-  }
-  &__label {
+.js-form {
+  width: 100vh;
+  background-color: #eeeeee;
+
+  .inputField {
+    margin-top: 10px;
+    line-height: 7vh;
     display: block;
-    line-height: 20px;
-    font-weight: bold;
-    text-align: right;
-  }
-  &__input {
-    line-height: 20px;
-    padding: 10px 15px;
-    box-sizing: border-box;
-  }
-  &__button {
-    display: inline-block;
-    padding: 12px 20px;
-    color: #fff;
-    background-color: #38aef0;
-    border: 0;
-  }
-  &__errors {
-    margin: 30px 0;
-    padding: 20px 40px;
-    border: 1px solid #ddd;
-    border-radius: 2px;
-    text-align: center;
+
+    &__label {
+
+
+    }
+    .panelLabel {
+      font-family: Meiryo;
+      font-weight: bold;
+    }
+    &__input {
+
+    }
+    .panelInput {
+      width: 100%;
+    }
   }
 }
