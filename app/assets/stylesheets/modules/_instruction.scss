@@ -1,0 +1,13 @@
+.instruction {
+  box-sizing: border-box;
+  background-color: #eeeeee;
+  position: relative;
+  width: 100%;
+  padding-top: 35px;
+  font-family: Meiryo;
+  font-weight: bold;
+  .section {
+    font-family: Meiryo;
+    color: black;
+  }
+}

@@ -1,0 +1,102 @@
+
+.main-contents {
+  box-sizing: border-box;
+  background-color: #eeeeee;
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  font-family: Meiryo;
+  font-weight: bold;
+}
+
+#card {
+  border: 15px solid lightgray;
+  border-radius: 40px;
+  margin: 20px auto 20px;
+  width: 85%;
+  height: 70%;
+  font-size: 3rem;
+  perspective: 600px;
+  transform-style: preserve-3d;
+  transition: 0.8s;
+  padding: auto 10px;
+  p {
+    vertical-align: center;
+  }
+}
+
+#card-front, #card-back {
+  display: block; width: 100%; height: 100%;
+  border-radius: 25px; position: absolute;
+  backface-visibility: hidden;
+  text-align: center;
+  font-size: 2.5rem;
+}
+#card-front {
+  background-color: #f1e2d7;
+}
+#card-back{
+  background-color: #fdaaaa;
+  transform: rotateY(180deg);
+}
+.open {
+  transform: rotateY(180deg);
+}
+#btns {
+  display: flex;
+  justify-content: space-between;
+}
+.jsbtn {
+  color: darkslategray;
+  width: 20%;
+  height: 50px;
+  border:0;
+  border-radius: 4px;
+  outline: 0;
+  padding:12px 20px;
+  transition: all 0.1s linear;
+  text-overflow: ellipsis;
+  text-align: center;
+  vertical-align: center;
+}
+.jsbtn:active {
+  transform:translateY(5px);
+}
+#next_btn {
+  background: linear-gradient(0.25turn, #ffff7f, #ffff8e, #ffff9e);
+  box-shadow: 0 8px 0 #ffdf5f;
+}
+#next_btn:active {
+  box-shadow: 0 2px 0 #ffdf5f;
+}
+#red_btn {
+  background: linear-gradient(0.25turn, #ff7f7f, #ff8484, #ff9999);
+  box-shadow: 0 8px 0 #ff5f5f;
+}
+#red_btn:active {
+  box-shadow: 0 2px 0 #ff5f5c;
+}
+#org_btn {
+  background: linear-gradient(0.25turn, #ffbf7f, #ffc489, #ffcc99);
+  box-shadow: 0 8px 0 #ff9f5f;
+}
+#org_btn:active {
+  box-shadow: 0 2px 0 #ff9f5f;
+}
+#grn_btn {
+  background: linear-gradient(0.25turn, #7fff7f, #89ff89, #99ff99);
+  box-shadow: 0 8px 0 #7fdf5f;
+}
+#grn_btn:active {
+  box-shadow: 0 2px 0 #7fdf5f;
+}
+#ble_btn {
+  background: linear-gradient(0.25turn, #7fffff, #84ffff, #89ffff);
+  box-shadow: 0 8px 0 #7fdfdf;
+}
+#ble_btn:active {
+  box-shadow: 0 2px 0 #7fdfdf;
+}
+#hidden_info {
+  display: none;
+}
