@@ -21,3 +21,4 @@ import '@fortawesome/fontawesome-free/js/all'
 import '../src/application.scss'
 
 import 'src/js/panel'
+import 'src/js/users'
