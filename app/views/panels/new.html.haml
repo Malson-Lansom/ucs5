@@ -1,0 +1,18 @@
+= render 'navbar'
+.container-fluid
+  .layout-container
+    = render 'sidebar'
+    = form_with(model: [@group, @panel], html: { class: 'js-form col-12 col-md-9' }, local: true) do |form|
+      = @group.name
+      .inputField
+        .inputField__label
+        = form.label 'パネル表（出題表示）:', class: 'panelLabel'
+        .inputField__input
+        = form.text_area :question, class: 'panelInput clearText1', placeholder: '問題を入力してください'
+      .inputField
+        .inputField__label    
+          = form.label 'パネル裏（回答表示）:', class: 'panelLabel'
+        .inputField__input
+          = form.text_area :answer, class: 'panelInput clearText2', placeholder: '解答を入力してください'
+      .folderButton
+        = form.submit class: 'submitbutton'
