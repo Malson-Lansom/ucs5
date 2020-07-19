@@ -1,9 +1,0 @@
-.sidebar.col-12.col-md-3
-  .folder_links
-    - current_user.groups.each do |group|
-      .card_folder
-        = link_to group_panels_path(group) do
-          .folder_name
-            = group.name
-        = link_to new_group_panel_path(group) do
-          カードを追加する
