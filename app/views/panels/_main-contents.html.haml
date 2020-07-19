@@ -1,0 +1,89 @@
+.main-contents.col-12.col-md-9
+  %h3.card_name
+    = @group.name
+  #hidden_info
+    = @qanda
+  #card
+    %p#card-front
+    %p#card-back
+
+  #btns
+    #red_btn.jsbtn わからない
+    #org_btn.jsbtn 重点項目
+    #grn_btn.jsbtn 多分大丈夫
+    #ble_btn.jsbtn 完璧!
+    #next_btn.jsbtn 次へ
+
+
+:javascript
+  (function() {
+
+    var qandas = document.getElementById('hidden_info');
+    var words = JSON.parse(qandas.textContent);
+
+    var testdata = [
+      { "question": "javascript<br/><br/>Math.sign()",       "answer": "正負の符号を求める<br/>引数は数値<br/>戻値は引数が正の時1<br/>負の場合は-1",  "user_id": 1 },
+      { "question": "javascript<br/><br/>arr.reduce()",      "answer": "配列の各要素に関数を実行し一つの値にまとめる",                              "user_id": 1 },
+      { "question": "javascript<br/><br/>str.charAt()",      "answer": "数字を引数にして、文字列から引数に該当する1文字取得する",                     "user_id": 6 },
+      { "question": "javascript<br/><br/>arr.concat()",      "answer": "配列同士を結合する",                                                    "user_id": 1 },
+      { "question": "javascript<br/><br/>arr.length",        "answer": "配列の要素数を取得する",                                                "user_id": 1 },
+      { "question": "javascript<br/><br/>str.repeat()",      "answer": "文字列を繰り返す",                                                      "user_id": 5 },
+      { "question": "javascript<br/><br/>str.lastIndexOf()", "answer": "特定の文字列がどのいちにあるか後方から調べる",                                "user_id": 1 },  
+      { "question": "javascript<br/><br/>str.search()",      "answer": "文字列内に特定のパターンがあるか調べる",                                      "user_id": 4 },
+      { "question": "javascript<br/><br/>str.include()",     "answer": "特定の文字列を含むか調べる",                                                "user_id": 1 },
+      { "question": "javascript<br/><br/>arr.filter()",      "answer": "配列内の条件をみたす要素からなる配列を作る",                                  "user_id": 2 } 
+
+    ];
+    //カードフリップ
+    var card = document.getElementById('card');
+    var cardFront = document.getElementById('card-front');
+    var cardBack = document.getElementById('card-back');
+    var btn = document.getElementById('next_btn');
+    card.addEventListener('click', function() {
+      flip();
+    });
+    btn.addEventListener('click', function() {
+      next();
+    });
+
+    function next() {
+      if (card.className === 'open') {
+        card.addEventListener('transitionend', setCard);
+        flip();
+      } else {
+        setCard();
+      }
+    }
+
+    function setCard() {
+      var num = Math.floor(Math.random() * words.length);
+      cardFront.innerHTML = words[num]["question"];
+      cardBack.innerHTML = words[num]["answer"];
+      card.removeEventListener('transitionend', setCard);
+    }
+
+    setCard();
+
+    window.addEventListener('keyup', function(e) {
+      e.keyCode
+      f: 70
+      n: 78
+      console.log(e.keyCode);
+      if (e.keyCode === 70) {
+        flip();
+      } else if (e.keyCode === 78) {
+        next();
+      }
+    });
+
+    function flip() {
+      card.className = card.className === '' ? 'open' : '';
+    }
+
+    var bdr_clr = document.getElementById.card;
+    function setBorder(bdr_clr) {
+      
+    }
+    //ボーダーカラーチェンジ
+
+  })();
