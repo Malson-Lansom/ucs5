@@ -58,3 +58,7 @@ gem 'jquery-rails'
 gem 'pry-rails'
 gem 'font-awesome-sass'
 gem 'devise'
+
+group :production do
+  gem 'pg'
+end
