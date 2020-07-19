@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  adapter: postgresql
-  encoding: unicode
-  pool: 5
+  database: ucs5_production
+  username: ucs5
+  password: <%= ENV['UCS5_DATABASE_PASSWORD'] %>
