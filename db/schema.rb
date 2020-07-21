@@ -10,7 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_14_024835) do
+ActiveRecord::Schema.define(version: 2020_07_21_010016) do
+
+  create_table "bdcs", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.integer "question", default: 0
+    t.bigint "group_id"
+    t.bigint "user_id"
+    t.bigint "panel_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["group_id"], name: "index_bdcs_on_group_id"
+    t.index ["panel_id"], name: "index_bdcs_on_panel_id"
+    t.index ["user_id"], name: "index_bdcs_on_user_id"
+  end
 
   create_table "group_users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.bigint "group_id"
@@ -53,6 +65,9 @@ ActiveRecord::Schema.define(version: 2020_07_14_024835) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "bdcs", "groups"
+  add_foreign_key "bdcs", "panels"
+  add_foreign_key "bdcs", "users"
   add_foreign_key "group_users", "groups"
   add_foreign_key "group_users", "users"
   add_foreign_key "panels", "groups"
