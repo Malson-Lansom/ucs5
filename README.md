@@ -17,12 +17,15 @@ URL: https://ucsk.herokuapp.com
 - カリキュラムで習った内容を盛り込み、踏襲して形にする練習作品
 
 ## アプリ説明
-![home.png](https://user-images.githubusercontent.com/61781906/90238986-cf56fd00-de61-11ea-84ee-e1a4459a5e7e.png"ログイン後、トップに簡易説明がございます。新規学習グループを作成を選択することで学習グループが作成されます。") 
+![home.png](https://user-images.githubusercontent.com/61781906/90238986-cf56fd00-de61-11ea-84ee-e1a4459a5e7e.png)
+ログイン後、トップに簡易説明がございます。新規学習グループを作成を選択することで学習グループが作成されます。  
 ![make_group.png](https://user-images.githubusercontent.com/61781906/90239515-99664880-de62-11ea-8b1a-e7053914ba38.png)
-![add_card.png](https://user-images.githubusercontent.com/61781906/90239557-aedb7280-de62-11ea-9ae2-61945b3eaf31.png"トップのサイドバーに学習グループが表示され、「カードを追加する」を選択することで「問題」と「回答」がセットになった暗記カードを作成することができます。") 
+![add_card.png](https://user-images.githubusercontent.com/61781906/90239557-aedb7280-de62-11ea-9ae2-61945b3eaf31.png)
+トップのサイドバーに学習グループが表示され、「カードを追加する」を選択することで「問題」と「回答」がセットになった暗記カードを作成することができます。  
 カードはAJAX通信で連続して、作成することができます。  
 現状、１グループでの保存するカード量の限界はありません。  
-![flip_card.png](https://user-images.githubusercontent.com/61781906/90239621-cb77aa80-de62-11ea-8d06-33aace88f2fc.png"カードを保存後、トップに戻り、学習グループを選択することで、暗記カードを表示させることができます。")
+![flip_card.png](https://user-images.githubusercontent.com/61781906/90239621-cb77aa80-de62-11ea-8d06-33aace88f2fc.png)
+カードを保存後、トップに戻り、学習グループを選択することで、暗記カードを表示させることができます。  
 表示されているパネルをクリックすることで、反転し答えが表示されます。  
 また、次へのボタンを押すことで、問題が切り替わります。問題が切り替わる順番は現状完全なランダムとなっています。  
 その他のボタンに関しては、現在の使用では使いません。他のモデルを絡めて今後機能を実装していく予定です。  
