@@ -9,7 +9,8 @@ URL: https://ucsk.herokuapp.com
 ＊ 問題点への改善は現状保留し、個人作成アプリ2号が終わると思われる8/20頃より再調整に入る予定 -->
 
 ## 名前の由来[MADE TO STICK](https://heathbrothers.com/download/mts-made-to-stick-model.pdf)
-- バイブル「MADE TO STICK」で言われるSUCCESSの原則の中から、unexpected, concrete, simpleの３つをいただいた
+- バイブル「MADE TO STICK」で言われるSUCCESSの原則の中から、unexpected, concrete, simpleの３つを開発の３大要素と掲げる
+- 5はモデル設計から実行でつまり、縮小すること、5回行ったため。実力不足なども浮き彫りになり、限られた期間でどのようにアウトプットするかを思考を重ねた。
 
 ## コンセプト[KEYNOTE](https://www.icloud.com/keynote/0ljrY_4-toh4B5krp2-sBwqmw)
 - 自身の教育関係への興味、想い
@@ -19,12 +20,14 @@ URL: https://ucsk.herokuapp.com
 ## アプリ説明
 ![home.png](https://user-images.githubusercontent.com/61781906/90238986-cf56fd00-de61-11ea-84ee-e1a4459a5e7e.png)
 ログイン後、トップに簡易説明がございます。新規学習グループを作成を選択することで学習グループが作成されます。  
+  
 ![make_group.png](https://user-images.githubusercontent.com/61781906/90239515-99664880-de62-11ea-8b1a-e7053914ba38.png)
   
 ![add_card.png](https://user-images.githubusercontent.com/61781906/90239557-aedb7280-de62-11ea-9ae2-61945b3eaf31.png)
 トップのサイドバーに学習グループが表示され、「カードを追加する」を選択することで「問題」と「回答」がセットになった暗記カードを作成することができます。  
 カードはAJAX通信で連続して、作成することができます。  
 現状、１グループでの保存するカード量の限界はありません。  
+  
 ![flip_card.png](https://user-images.githubusercontent.com/61781906/90239621-cb77aa80-de62-11ea-8d06-33aace88f2fc.png)
 カードを保存後、トップに戻り、学習グループを選択することで、暗記カードを表示させることができます。  
 表示されているパネルをクリックすることで、反転し答えが表示されます。  
