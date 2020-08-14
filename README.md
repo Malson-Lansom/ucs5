@@ -30,6 +30,8 @@ URL: https://ucsk.herokuapp.com
   
 ![flip_card.png](https://user-images.githubusercontent.com/61781906/90239621-cb77aa80-de62-11ea-8d06-33aace88f2fc.png)
 カードを保存後、トップに戻り、学習グループを選択することで、暗記カードを表示させることができます。  
+  
+![flip_card.gif](https://user-images.githubusercontent.com/61781906/90240702-bd2a8e00-de64-11ea-9464-4ed96fc55b08.gif)
 表示されているパネルをクリックすることで、反転し答えが表示されます。  
 また、次へのボタンを押すことで、問題が切り替わります。問題が切り替わる順番は現状完全なランダムとなっています。  
 その他のボタンに関しては、現在の使用では使いません。他のモデルを絡めて今後機能を実装していく予定です。  
