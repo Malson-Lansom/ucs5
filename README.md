@@ -1,11 +1,12 @@
 # UCS5
-制作期間： 7月9日~7月20日 (未完成)  
+制作期間： 7月9日~7月20日 
+<!-- (未完成)  
 URL: https://ucsk.herokuapp.com  
 アカウント  
 - email:  user_001@gmail.com  
 - pass:   user_001  
 ＊ 本番環境ではBootstrapが何故か有効になっていないため、現状レイアウトが崩れています。  
-＊ 問題点への改善は現状保留し、個人作成アプリ2号が終わると思われる8/20頃より再調整に入る予定
+＊ 問題点への改善は現状保留し、個人作成アプリ2号が終わると思われる8/20頃より再調整に入る予定 -->
 
 ## 名前の由来[https://heathbrothers.com/download/mts-made-to-stick-model.pdf]
 - バイブル「MADE TO STICK」で言われるSUCCESSの原則の中から、unexpected, concrete, simpleの３つをいただいた
